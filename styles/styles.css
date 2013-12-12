@@ -1,32 +1,47 @@
+
+
 #banner{
+  
   font-family:sans-serif;
   font-size: 1.5em;
   font-weight: bolder;
   color: white;
-  background-color: blue;
+  background-color: darkblue;
+  padding-left:3px;
+  padding-top:10px;
+  padding-bottom:10px;
   
 }
 
-LeftColumn{
+.left{
  width: 75%;
   float: left;
-  
 }
 
-RightColumn{
- background-color: lime;
+.right{
+ background-color: lightblue;
   float: right;
   width: 23%;
   
 }
+.center {
+    margin-top:20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+
+}
 
 #main{
   font: serif;
-  
+  color:blue;
+  height:auto;
+  padding:4px 4px 4px 4px;
 }
 
 nav a {
-  margin-bottom: 1em;
+  margin-bottom: 20px;
   
 }
 
@@ -34,20 +49,34 @@ nav a {
 form label
 {
    float:left;
-   width:7em;
+   width:9.2em;
 }
-form input[type=text,email], select  
+form input[type=text], select  
 {
     margin-left:0.5em;
     margin-bottom:0.5em;
 }
+form input[type=email] {
+        margin-left:0.5em;
+    margin-bottom:0.5em;
+}
 form input[type=radio]
 { 
-    float:left;
+   
 }
 
 footer{
   font-family: sans-serif;
   font-size: 0.7em;
+  color:cadetblue ;
 }
 
+	
+.fadein {
+	position:relative;
+	width:300px;
+	height:370px;
+}
+.fadein img {
+	position:absolute;
+}

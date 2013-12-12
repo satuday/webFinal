@@ -1,32 +1,38 @@
-<!DOCTYPE HTML>
+﻿<!DOCTYPE HTML>
 <html>
  <head>
   <meta content="text/html; charset=UTF-8" http-equiv="content-type" />
   <link href="styles/styles.css" media="screen" rel="stylesheet" type="text/css" />
-<script src="js/script.js" type="text/javascript"></script>  <title>Sample Page</title>
+  <script src="js/jquery-1.10.2.min.js"></script>
+  <script src="js/script.js" type="text/javascript"></script>  
+       <script>
+           $(document).ready(function () {
+               $(function () {
+                   $('.fadein img:gt(0)').hide();
+                   setInterval(function () {
+                       $('.fadein :first-child').fadeOut(1000)
+                          .next('img').fadeIn(1000)
+                          .end().appendTo('.fadein');
+                   }, 5000);
+               });
+           });
+  </script>
+     <title>Photo Page</title>
+
  </head>
  <body>
-  <leftcolumn>
+  <section class="left">
   <div id="banner">
    <p>
     Welcome to the Student Fitness Club at<br />
     The new York City College of Technology</p>
   </div>
   <div id="main">
-  <p>
-  The CityTech Student Fitness Club is an exciting place for students who love exercises to meet.
-  </p>
-  <p>
-  At Fitness Club we offer our members a wide variety of classes, from Pilates to
-   martial arts. In our classes you will benefit from the knowledge, dedication
-    and expertise of our certified instructors, and get a specialized workout at an affordable price.
-  </p>
-  <p>
-  Please join our club by filling out the <a href="application.html"> Application </a> form.
-  </p>
-  <p>
-  You are welcome to contact us by email at <a href="mailto:xcl888@hotmail.com&subject=Fitness Club"> xcl888@hotmail.com </a>
-  </p>
+      <div class="fadein">
+        <img src="img/1.png" />
+      <img src="img/2.png" />
+      <img src="img/3.png" />
+          </div>
   <footer>
   <hr>
   <p>
@@ -37,23 +43,22 @@
   </footer>
   
   </div>
-  </leftcolumn>
-  <rightcolumn>
-  <img src="" />
-  <nav class="nav">
-  <a href="#">HOME</a><br />
-   <a href="#">CLASSES</a><br />
-    <a href="#">MEMBERSHIP</a><br />
-     <a href="#">ABOUT</a><br />
-      <a href="#">TOOLS</a><br />
+  </section>
+  <section class="right">
+  <img src="img/main.png" class="center" />
+  <nav class="nav" style="margin: 20px">
+ <p> <a href="index.html">HOME</a><br /></p>
+ <p>  <a >CLASSES</a></p>
+  <p>  <a href="application.html">MEMBERSHIP</a></p>
+ <p>    <a href="#">ABOUT</a></p>
+  <p>    <a href="#">TOOLS</a></p>
       <ul>
-      <li>PMI Calculator 
+      <li> <a href="#" > PMI Calculator </a>
       </li>
-            <li>Calory Calculator 
+            <li> <a href="http://www.everydayhealth.com/my-calorie-counter.aspx" target="_blank">Calory Calculator </a> 
       </li>
       </ul>
    </nav>
-  </rightcolumn>
-  
+  </section>
   </body>
 </html>

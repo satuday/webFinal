@@ -1,12 +1,14 @@
-<!DOCTYPE HTML>
+﻿<!DOCTYPE HTML>
 <html>
  <head>
   <meta content="text/html; charset=UTF-8" http-equiv="content-type" />
   <link href="styles/styles.css" media="screen" rel="stylesheet" type="text/css" />
-<script src="js/script.js" type="text/javascript"></script>  <title>Sample Page</title>
+  <script src="js/jquery-1.10.2.min.js"></script>
+  <script src="js/script.js" type="text/javascript"></script> 
+     <title>Application Page</title>
  </head>
  <body>
-  <leftcolumn>
+  <section class="left">
   <div id="banner">
    <p>
     Welcome to the Student Fitness Club at<br />
@@ -17,13 +19,13 @@
   <label>Prefix:</label><select> <option>Mr.</option> <option>Ms.</option></select><br />
   <label>First Name:</label> <input type="Text" /><br />
    <label>Middle Initial:</label> <input type="Text" /><br />
-    <label>Last Name:</label> <input type="Text" required="true" /><br />
-     <label>Email address:</label><input type="email" /><br />
+    <label>Last Name:</label> <input type="Text" required="required" /><br />
+     <label>Email address:</label><input type="email" required="required" /><br />
       <label>Main Interest:</label> <input type="radio" value="Cardiovascular Fitness" />Cardiovascular Fitness<br />
         <label>&nbsp;</label><input type="radio" value="Weight" checked="true" />Weight Loss<br />
          <label>&nbsp;</label><input type="radio" value="Toning & Strenght" />Toning &amp; Strenght<br />
-         <label>&nbsp;</label> <input type="radio" value="Yoga" />Yoga<br />
-         <label>&nbsp;</label> <input type="radio" value="Pilates" />Pilates<br />
+         <label>&nbsp;</label><input type="radio" value="Yoga" />Yoga<br />
+         <label>&nbsp;</label><input type="radio" value="Pilates" />Pilates<br />
      Please provide any comments or suggestions:<br />
       <textarea cols="40" rows="6"></textarea><br />
       <input type="submit" value="Submit" />
@@ -40,23 +42,23 @@
   </footer>
   
   </div>
-  </leftcolumn>
-  <rightcolumn>
-  <img src="" />
-  <nav class="nav">
-  <a href="index.html">HOME</a><br />
-   <a href="photo.html">CLASSES</a><br />
-    <a>MEMBERSHIP</a><br />
-     <a href="#">ABOUT</a><br />
-      <a href="#">TOOLS</a><br />
+  </section>
+   <section class="right">
+  <img src="img/main.png" class="center" />
+  <nav class="nav" style="margin: 20px">
+ <p> <a href="index.html">HOME</a><br /></p>
+ <p>  <a href="photo.html">CLASSES</a></p>
+  <p>  <a >MEMBERSHIP</a></p>
+ <p>    <a href="#">ABOUT</a></p>
+  <p>    <a href="#">TOOLS</a></p>
       <ul>
-      <li>PMI Calculator 
+      <li><a href="#" > PMI Calculator </a>
       </li>
-            <li><a href="http://www.everydayhealth.com/my-calorie-counter.aspx"> Calory Calculator </a>
+            <li> <a href="http://www.everydayhealth.com/my-calorie-counter.aspx" target="_blank">Calory Calculator </a> 
       </li>
       </ul>
    </nav>
-  </rightcolumn>
+  </section>
   
   </body>
 </html>

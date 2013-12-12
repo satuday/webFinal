@@ -1,12 +1,15 @@
-<!DOCTYPE HTML>
+﻿<!DOCTYPE HTML>
 <html>
  <head>
   <meta content="text/html; charset=UTF-8" http-equiv="content-type" />
   <link href="styles/styles.css" media="screen" rel="stylesheet" type="text/css" />
-<script src="js/script.js" type="text/javascript"></script>  <title>Sample Page</title>
+  <link href="styles/styles.css" media="screen" rel="stylesheet" type="text/css" />
+  <script src="js/jquery-1.10.2.min.js"></script>
+  <script src="js/script.js" type="text/javascript"></script>  
+     <title>Home Page</title>
  </head>
  <body>
-  <leftcolumn>
+  <section class="left">
   <div id="banner">
    <p>
     Welcome to the Student Fitness Club at<br />
@@ -25,40 +28,34 @@
   Please join our club by filling out the <a href="application.html"> Application </a> form.
   </p>
   <p>
-  You are welcome to contact us by email at <a href="mailto:xcl888@hotmail.com&subject=Fitness Club"> xcl888@hotmail.com </a>
+  You are welcome to contact us by email at <a href="mailto:xcl888@hotmail.com?subject=Fitness Club"> xcl888@hotmail.com </a>
   </p>
   <footer>
   <hr>
   <p>
-  © CityTech Student Fitness Club<br />
+  © CityTech Student Fitness Club
+<br />
  Designed by Yaoxin Zhang
   </p>
   </footer>
   
   </div>
-  </leftcolumn>
-  <rightcolumn>
-  <img src="" />
-  <nav class="nav">
-  <a href="#">HOME</a><br />
-   <a href="#">CLASSES</a><br />
-    <a href="#">MEMBERSHIP</a><br />
-     <a href="#">ABOUT</a><br />
-      <a href="#">TOOLS</a><br />
+  </section>
+  <section class="right">
+  <img src="img/main.png" class="center" />
+  <nav class="nav" style="margin: 20px">
+ <p> <a>HOME</a><br /></p>
+ <p>  <a href="photo.html">CLASSES</a></p>
+  <p>  <a href="application.html">MEMBERSHIP</a></p>
+ <p>    <a href="#">ABOUT</a></p>
+  <p>    <a href="#">TOOLS</a></p>
       <ul>
-      <li>PMI Calculator 
+      <li><a href="#"> PMI Calculator </a>
       </li>
-            <li>Calory Calculator 
+            <li> <a href="http://www.everydayhealth.com/my-calorie-counter.aspx" target="_blank">Calory Calculator </a> 
       </li>
       </ul>
    </nav>
-  </rightcolumn>
-  
-  </body>
-  <footer>
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-  <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
-  
-  </footer>
-  
+  </section>
+  </body>  
 </html>
